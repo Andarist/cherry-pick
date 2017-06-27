@@ -1,0 +1,26 @@
+{
+  "name": "cherry-picked",
+  "version": "0.0.0",
+  "description": "Build tool (as prepublish step) to ease cherry-picked submodules creation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Andarist/cherry-picked.git"
+  },
+  "keywords": [
+    "build",
+    "tool",
+    "es",
+    "cjs",
+    "cherry-pick"
+  ],
+  "author": "Mateusz Burzyński <mateuszburzynski@gmail.com> (https://github.com/Andarist)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Andarist/cherry-picked/issues"
+  },
+  "homepage": "https://github.com/Andarist/cherry-picked#readme"
+}
