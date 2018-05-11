@@ -1,9 +1,15 @@
 {
-  "name": "cherry-picked",
+  "name": "cherry-pick",
   "version": "0.0.0",
-  "description": "Build tool (as prepublish step) to ease cherry-picked submodules creation",
-  "main": "index.js",
+  "description": "🍒📦 Build tool to generate proxy directories.",
+  "main": "./lib/index.js",
+  "bin": "./bin/cherry-pick.js",
+  "files": [
+    "bin",
+    "lib"
+  ],
   "scripts": {
+    "precommit": "lint-staged",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -14,6 +20,7 @@
     "build",
     "tool",
     "es",
+    "commonjs",
     "cjs",
     "cherry-pick"
   ],
@@ -22,5 +29,16 @@
   "bugs": {
     "url": "https://github.com/Andarist/cherry-picked/issues"
   },
-  "homepage": "https://github.com/Andarist/cherry-picked#readme"
+  "homepage": "https://github.com/Andarist/cherry-picked#readme",
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "rimraf": "^2.6.2",
+    "tiny-glob": "^0.2.0",
+    "yargs": "^11.0.0"
+  },
+  "devDependencies": {
+    "husky": "^0.14.3",
+    "lint-staged": "^7.1.0",
+    "prettier": "^1.12.1"
+  }
 }
