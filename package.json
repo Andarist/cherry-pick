@@ -1,7 +1,7 @@
 {
   "name": "cherry-pick",
   "version": "0.1.0",
-  "description": "🍒📦 Build tool to generate proxy directories.",
+  "description": "🍒⛏📦 Build tool to generate proxy directories.",
   "main": "./lib/index.js",
   "bin": "./bin/cherry-pick.js",
   "files": [

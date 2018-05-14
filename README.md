@@ -1,4 +1,4 @@
-# cherry-pick 🍒📦
+# cherry-pick 🍒⛏📦
 
 Build tool to generate proxy directories with `package.json` files such as this:
 
@@ -59,7 +59,7 @@ Options:
   --help, -h     Show help                                             [boolean]
   --version, -v  Show version number                                   [boolean]
   --cjs-dir                                                     [default: "lib"]
-  --es-dir                                                       [default: "es"]
+  --esm-dir                                                      [default: "es"]
   --types-dir
   --cwd                                                           [default: "."]
   --input-dir                                                   [default: "src"]

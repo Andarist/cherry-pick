@@ -16,13 +16,13 @@ yargs
 			yargs
 				.default('input-dir', 'src')
 				.option('cjs-dir', { default: 'lib' })
-				.option('es-dir', { default: 'es' })
+				.option('esm-dir', { default: 'es' })
 				.option('types-dir')
 				.option('cwd', { default: '.' }),
 		options =>
 			cherryPick(options).then(files =>
 				console.log(
-					`\n🍒 📦  ${DONE_LABEL} Created proxy directories: ${files.join(
+					`\n🍒 ⛏ 📦  ${DONE_LABEL} Created proxy directories: ${files.join(
 						', '
 					)}.\n`
 				)
@@ -35,7 +35,7 @@ yargs
 		options =>
 			clean(options).then(files =>
 				console.log(
-					`\n🍒 📦  ${DONE_LABEL} Removed proxy directories: ${files.join(
+					`\n🍒 ⛏ 📦  ${DONE_LABEL} Removed proxy directories: ${files.join(
 						', '
 					)}.\n`
 				)
