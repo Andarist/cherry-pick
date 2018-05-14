@@ -35,7 +35,7 @@ yargs
 		options =>
 			clean(options).then(files =>
 				console.log(
-					`\n🍒 ⛏ 📦  ${DONE_LABEL} Removed proxy directories: ${files.join(
+					`\n🍒 ⛏ 🗑  ${DONE_LABEL} Removed proxy directories: ${files.join(
 						', '
 					)}.\n`
 				)
