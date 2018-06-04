@@ -1,5 +1,5 @@
 {
-  "{src,bin}/**/*.js": [
+  "{lib,bin}/**/*.js": [
     "prettier --no-semi --use-tabs --single-quote --trailing-comma es5 --write",
     "git add"
   ],
