@@ -15,6 +15,7 @@ yargs
 		yargs =>
 			yargs
 				.default('input-dir', 'src')
+				.option('name')
 				.option('cjs-dir', { default: 'lib' })
 				.option('esm-dir', { default: 'es' })
 				.option('types-dir')
