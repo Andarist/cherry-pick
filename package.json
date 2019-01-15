@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Andarist/cherry-picked.git"
+    "url": "git+https://github.com/Andarist/cherry-pick.git"
   },
   "keywords": [
     "build",
@@ -30,9 +30,9 @@
   "author": "Mateusz Burzyński <mateuszburzynski@gmail.com> (https://github.com/Andarist)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Andarist/cherry-picked/issues"
+    "url": "https://github.com/Andarist/cherry-pick/issues"
   },
-  "homepage": "https://github.com/Andarist/cherry-picked#readme",
+  "homepage": "https://github.com/Andarist/cherry-pick#readme",
   "dependencies": {
     "chalk": "^2.4.1",
     "rimraf": "^2.6.2",
