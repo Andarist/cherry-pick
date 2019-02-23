@@ -4,8 +4,6 @@ const yargs = require('yargs')
 const chalk = require('chalk')
 const { default: cherryPick, clean } = require('..')
 
-const noop = () => {}
-
 const DONE_LABEL = chalk.green.inverse(' DONE ')
 
 yargs
@@ -19,6 +17,7 @@ yargs
 				.option('cjs-dir', { default: 'lib' })
 				.option('esm-dir', { default: 'es' })
 				.option('types-dir')
+				.option('include', { default: '!(index).{js,ts}' })
 				.option('cwd', { default: '.' }),
 		options =>
 			cherryPick(options).then(files =>
@@ -32,7 +31,11 @@ yargs
 	.command(
 		'clean [input-dir]',
 		'Cleanup generated directories',
-		yargs => yargs.default('input-dir', 'src').option('cwd', { default: '.' }),
+		yargs =>
+			yargs
+				.default('input-dir', 'src')
+				.option('cwd', { default: '.' })
+				.option('include', { default: '!(index).{js,ts}' }),
 		options =>
 			clean(options).then(files =>
 				console.log(
