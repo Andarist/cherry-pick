@@ -26,13 +26,13 @@ import module from "package/lib/module";
 
 There are problems with this approach:
 
-* it is often encouraging people to import files authored in CJS format, which
+- it is often encouraging people to import files authored in CJS format, which
   if produced with tools like [`babel`](https://github.com/babel/babel) has i.e.
   interop helper functions deoptimizing imported file size when comparing to the
   same file authored in ESM format. Also `webpack` just bails out on CJS files
   when trying to optimize your application size with techniques such as
   tree-shaking & scope hoisting (a.k.a module concatenation).
-* it is exposing **internal directory structure** to the user. Why `lib` is in
+- it is exposing **internal directory structure** to the user. Why `lib` is in
   the requested path? If you ship both CJS & ESM directories to `npm` and if
   users would like to import appropriate file depending on the tool they are
   "forced" to remember this and switch between importing the same thing with
@@ -61,6 +61,7 @@ Options:
   --cjs-dir                                                     [default: "lib"]
   --esm-dir                                                      [default: "es"]
   --types-dir
+  --include                                        [default: "!(index).{js,ts}"]
   --cwd                                                           [default: "."]
   --input-dir                                                   [default: "src"]
 ```
@@ -76,6 +77,7 @@ Options:
   --help, -h     Show help                                             [boolean]
   --version, -v  Show version number                                   [boolean]
   --cwd                                                           [default: "."]
+  --include                                        [default: "!(index).{js,ts}"]
   --input-dir                                                   [default: "src"]
 ```
 
