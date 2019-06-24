@@ -9,7 +9,6 @@
     "lib"
   ],
   "scripts": {
-    "precommit": "lint-staged",
     "test": "echo \"Error: no test specified\" && exit 1",
     "release:patch": "npm version patch && npm publish && git push --follow-tags",
     "release:minor": "npm version minor && npm publish && git push --follow-tags",
@@ -34,14 +33,14 @@
   },
   "homepage": "https://github.com/Andarist/cherry-picked#readme",
   "dependencies": {
-    "chalk": "^2.4.1",
-    "rimraf": "^2.6.2",
-    "tiny-glob": "^0.2.0",
-    "yargs": "^11.0.0"
+    "chalk": "^2.4.2",
+    "rimraf": "^2.6.3",
+    "tiny-glob": "^0.2.6",
+    "yargs": "^13.2.4"
   },
   "devDependencies": {
-    "husky": "^0.14.3",
-    "lint-staged": "^7.1.0",
-    "prettier": "^1.12.1"
+    "husky": "^2.5.0",
+    "lint-staged": "^8.2.1",
+    "prettier": "^1.18.2"
   }
 }
