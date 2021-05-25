@@ -94,6 +94,6 @@ cherryPick({ inputDir: "source" })
   )
   .then(() => clean({ inputDir: "source" }))
   .then(removed =>
-    console.log(`Removed proxy directories: ${Removed.join(", ")}`)
+    console.log(`Removed proxy directories: ${removed.join(", ")}`)
   );
 ```
